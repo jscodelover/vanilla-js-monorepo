@@ -1,0 +1,14 @@
+{
+  "name": "my-vanilla-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "manisha basra",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "yarn run sass -w -c --load-path=node_modules src:dist --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.64.0",
+    "typescript": "^5.1.6"
+  }
+}
