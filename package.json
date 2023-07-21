@@ -8,5 +8,8 @@
   "workspaces": [
     "./apps/*",
     "./packages/*"
-  ]
+  ],
+  "scripts": {
+    "build-app:css": "yarn workspace my-vanilla-project run build:css"
+  }
 }

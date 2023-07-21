@@ -5,9 +5,11 @@
   "author": "manisha basra",
   "license": "MIT",
   "scripts": {
-    "build:css": "yarn run sass -w -c --load-path=node_modules src:dist --style=compressed"
+    "clean": "yarn run rimraf dist",
+    "build:css": " yarn run clean && yarn run sass -w -c src:dist --style=compressed"
   },
   "devDependencies": {
+    "rimraf": "^5.0.1",
     "sass": "^1.64.0",
     "typescript": "^5.1.6"
   }
